@@ -22,6 +22,9 @@ function Form() {
 
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
+		alert(
+			`Страна: ${formValues.country}\nГород: ${formValues.city}\nВид ВУЗа: ${formValues.university}\nВариант проживание: ${formValues.accommodation}`
+		);
 	};
 
 	const handleSelectChange = (
