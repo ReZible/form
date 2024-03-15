@@ -1,0 +1,80 @@
+.customSelect_wrapper {
+    position: relative;
+    display: flex;
+}
+
+.customSelect_wrapper.customSelect_disabled div {
+    cursor: not-allowed;
+}
+
+.customSelect_wrapper.customSelect_disabled .customSelect {
+    background-color: silver;
+}
+
+.customSelect_arrow {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    cursor: pointer;
+}
+
+
+.customSelect {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    /*padding: 5px;*/
+    appearance: none;
+    border: 1px solid silver;
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+}
+
+.customSelect_disabled {
+    cursor: not-allowed;
+}
+
+.customSelect_ul {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    background-color: whitesmoke;
+    z-index: 5;
+    border-radius: 5px;
+    border: 1px solid silver;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.customSelect_ul li {
+    color: black;
+    text-align: left;
+    padding: 5px;
+    cursor: pointer;
+}
+.customSelect_ul li:not(:last-child) {
+    border-bottom: 1px solid silver;
+}
+.customSelect_ul li:hover {
+    background-color: lavender;
+}
+
+.customSelect_liSelected {
+    background-color: lightgrey;
+}
+
+.customSelect_reset {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 7px;
+    z-index: 4;
+    cursor: pointer;
+}
+
+
